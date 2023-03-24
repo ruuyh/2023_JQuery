@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/JQcss.css">
+    <!-- cdn을 연결할때는 html을 통해 연결 -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1 class="header" id="header">JQuery를 이용한 css, class 접근</h1>
+    <p>버튼을 클릭하면 보이지않습니다</p>
+    <button id="btn">숨김</button>
+    <button id="toggle-button">header 숨김/보임</button>
+
+    <!-- 투두리스트 -->
+    <ul id="todo-list">
+        <li id="todo">
+            <!-- 체크박스 클릭했을때 li에 디자인 넣기 -->
+            <input type="checkbox">
+            <span>할일</span>
+            <button>X</button>
+        </li>
+    </ul>
+
+    <table id="number-btns"><!-- $("선택자")를 이용해서 여러개를 가져올 수 있는지 -->
+        <tbody> <!-- prop("disabled","true") 이용하여 버튼을 누르면 사용불가 -->
+            <tr> <!-- button을 누를때마다 버튼의 글자색을 빨간색으로 변경 -->
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="./js/JQcss.js"></script>
+</body>
+</html>
